@@ -1,0 +1,184 @@
+body{
+    background-color: black;
+}
+
+span.cell{
+    height:8px;
+    width:8px;
+/*    border:1px solid purple;*/
+    background-color: #ccc;
+    padding:0;
+    margin:0;
+    position:absolute;
+}
+
+/* Get rid of the cell border when it is selected */
+span.cellSelected{
+    height:11px;
+    width:11px;
+    background-color: red;
+    padding:0;
+    margin:0;
+    position:absolute;
+}
+
+#gridContainer{
+    top:100px;
+    left:10px;
+    padding:0;
+    display:inline-block;
+    position:absolute;
+    border: 5px solid white;
+}
+
+#colorSlider{
+    position: absolute;
+    left: 85%;
+    bottom: 15px;
+    height: 70px;
+}
+
+#gradientValue{
+    position: relative;
+    bottom: 25px;
+    left: 150px;
+}
+
+#gradientLabel{
+    position: relative;
+    bottom: 10px;
+}
+
+#colorChooser{
+    position: absolute;
+    left:75%;
+    bottom: 40px;
+}
+
+#fpsValue{
+    position: relative;
+    bottom: 25px;
+    left: 150px;
+}
+
+#fpsLabel{
+    position: relative;
+    bottom: 10px;
+}
+
+#fpsSlider{
+    position: absolute;
+    left: 60%;
+    bottom: 15px;
+    height: 70px;
+}
+
+#patternChooser{
+    position: absolute;
+    left:45%;
+    bottom: 40px;
+    width: 150px;
+}
+
+#stop{
+    position: absolute;
+    left: 35%;
+    bottom: 40px;
+}
+
+#step{
+    position: absolute;
+    left: 25%;
+    bottom: 40px;
+}
+
+#clear{
+    position: absolute;
+    left: 15%;
+    bottom: 40px;
+}
+
+#restart{
+    position: absolute;
+    left: 5%;
+    bottom: 40px;
+}
+
+.slider{
+    color: red;
+    opacity: 0.7;
+    transition: .5s;
+}
+
+.slider:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.slider:-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    color: green; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.button, .dropDown{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    width: 100px;
+    height: 2em;
+    border: 2px solid white;
+}
+
+.dropDown, .hover{
+        transition: 0.2s;
+}
+
+.button:hover, .dropDown:hover{
+    background-color: darkred;
+    cursor: pointer;
+}
+
+footer{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 1em;
+    color:white;
+    margin: 0;
+}
+
+p{
+    font-size: 1em;
+    color:white;
+    margin: 0;
+}
+
+h1{
+    margin: auto;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    position:absolute;
+    font-size:5em;
+    color: white;
+}
+
+a{
+    color:red;
+}
+
+a:active{
+    color: blue;
+}

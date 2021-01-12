@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>About</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	</head>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: cursive, sans-serif;
+            margin: auto;
+            width: 50%;
+            text-align: center;
+        }
+        
+        h1{
+            font-size: 2em;
+            font-family: 'Press Start 2P', cursive;
+        }
+        
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        a{
+            color: red;
+        }
+        
+        a:active{
+            color:blue;
+        }
+    </style>
+
+	<body>
+        <h1>About</h1>
+        <p style="text-align: center">Project: Conway's Game of Life<br>
+        <a href="pixel-life.html">Game Page</a>
+        </p>
+        <h2>Original Game</h2>
+        <p>Conway's Game of Life is a simple simulation for life.<br>
+            The game consists of 4 rules:</p>
+        <ul>
+            <li>Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.</li>
+            <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+            <li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li>
+            <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+        </ul>
+        <p>More information about the game can be found here: <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game of Life Wiki</a></p>
+        <h2>Modifications</h2>
+        <p>I decided to add more features that would make the simulation more enjoyable for players:</p>
+        <ul>
+            <li>Restart</li>
+            <li>Clear</li>
+            <li>Pause/Resume</li>
+            <li>Step</li>
+            <li>Pattern selector</li>
+            <li>FPS selector</li>
+            <li>Color Selector</li>
+            <li>Responsive Game Board</li>
+        </ul>
+	</body>
+</html>

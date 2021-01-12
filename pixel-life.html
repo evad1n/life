@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Game of Life</title>
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="life.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div id="gridContainer"></div>
+		<h1>Life!</h1>
+		<select id="colorChooser" class="dropDown">
+			<option value="aqua">Aqua</option>
+			<option value="Bisque">Bisque</option>
+			<option value="black">Black</option>
+			<option value="blue">Blue</option>
+			<option value="brown">Brown</option>
+			<option value="chocolate">Chocolate</option>
+			<option value="cyan">Cyan</option>
+			<option value="DarkGray">Dark Gray</option>
+			<option value="green">Green</option>
+			<option value="red">Red</option>
+			<option value="magenta">Magenta</option>
+			<option value="orange">Orange</option>
+			<option value="tan">Tan</option>
+			<option value="wheat">Wheat</option>
+			<option value="white">White</option>
+			<option value="WhiteSmoke">WhiteSmoke</option>
+			<option value="yellow">Yellow</option>
+			<option value="gradient" selected>Gradient</option>
+		</select>
+		<button id="stop" class="button">Stop</button>
+		<button id="step" class="button">Step</button>
+		<button id="restart" class="button">Restart</button>
+		<button id="clear" class="button">Clear</button>
+		<select id="patternChooser" class="dropDown">
+			<option value="random" selected>Random</option>
+			<option value="rpentomino">The R-Pentomino</option>
+			<option value="diehard">Diehard</option>
+			<option value="acorn">Acorn</option>
+			<option value="gosper">Gosper Glider Gun</option>
+			<option value="infinite1">Growth 1</option>
+			<option value="infinite2">Growth 2</option>
+			<option value="infinite3">Growth 3</option>
+		</select>
+		<div id="colorSlider">
+			<h2 id="gradientLabel">Gradient Value</h2>
+		<input type="range" min="1" max="255" value="50" class="slider" id="colorRange">
+			<p id="gradientValue">50</p>
+		</div>
+		<div id="fpsSlider">
+			<h2 id="fpsLabel">FPS</h2>
+		<input type="range" min="1" max="240" value="12" class="slider" id="fpsRange">
+			<p id="fpsValue">12</p>
+		</div>
+		<footer>Created by Will Dickinson<a href="about.html"> About</a> | <a href="../../index.html"> Home Page</a></footer>
+
+		<script src="lifeworld.js"></script>
+		<script src="game.js"></script>
+	</body>
+</html>
